@@ -71,6 +71,17 @@ const Nav = () => {
 								Leadership
 							</Button>
 						</ListItem>
+						<ListItem>
+							<Button color='primary' href='/orders'>
+								General Orders
+							</Button>
+						</ListItem>
+						<ListItem>
+							<Button color='primary' href='/rank'>
+								Rank System
+							</Button>
+						</ListItem>
+
 						{/* {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
           <ListItem  button key={text}>
             <ListItemIcon >{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>

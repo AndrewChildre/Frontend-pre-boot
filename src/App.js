@@ -8,24 +8,28 @@ import Header from './components/Header'
 import Values from './components/Values'
 import Home from './components/Home'
 import Leadership from './components/Leadership'
+import GeneralOrders from './components/GeneralOrders'
+import RankSys from './components/RankSys';
+
+
 function App() {
   return (
-    <div className="App">
-    {/* <Fitness /> */}
+		<div className='App'>
+			{/* <Fitness /> */}
 
-      
-      <main>
-        <Header />
-        <Router>
-        <Route path='/' exact component={Home} />
-        <Route path='/values' exact component={Values} />
-        <Route path='/fitness' exact component={Fitness} />
-        <Route path='/leadership' exact component={Leadership} />
-        </Router>
-      </main>
-
-    </div>
-  );
+			<main>
+				<Header />
+				<Router>
+					<Route path='/' exact component={Home} />
+					<Route path='/values' exact component={Values} />
+					<Route path='/fitness' exact component={Fitness} />
+					<Route path='/leadership' exact component={Leadership} />
+					<Route path='/orders' exact component={GeneralOrders} />
+					<Route path='/rank' exact component={RankSys} />
+				</Router>
+			</main>
+		</div>
+	);
 }
 
 export default App;
