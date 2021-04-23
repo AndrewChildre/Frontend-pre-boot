@@ -7,7 +7,7 @@ import Nav from './components/Nav'
 import Header from './components/Header'
 import Values from './components/Values'
 import Home from './components/Home'
-
+import Leadership from './components/Leadership'
 function App() {
   return (
     <div className="App">
@@ -20,6 +20,7 @@ function App() {
         <Route path='/' exact component={Home} />
         <Route path='/values' exact component={Values} />
         <Route path='/fitness' exact component={Fitness} />
+        <Route path='/leadership' exact component={Leadership} />
         </Router>
       </main>
 
