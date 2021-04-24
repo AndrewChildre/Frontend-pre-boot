@@ -32,7 +32,7 @@ const FitnessGet = (props) => {
 	return (
 		<ul>
 			{fitness.map((fitness) => (
-				<li key={fitness._id}>
+				<li key={fitness.id}>
 					<Link to={`/fitness/${fitness.id}`}>{fitness.name}</Link>
 				</li>
 			))}

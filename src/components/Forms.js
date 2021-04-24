@@ -1,13 +1,28 @@
-import React from 'react'
+import React from 'react';
 
+const FitnessForm = ({ fitness, handleSubmit, handleChange }) => (
+	<form onSubmit={handleSubmit}>
+		<label htmlFor='name'>Name</label>
+		<input
+			placeholder='Name'
+			value={fitness.name}
+			name='name'
+			onChange={handleChange}
+			required
+			id='name'
+		/>
 
-const Forms = (props) => {
-    return (
-			<form onSubmit={props.getInfo}>
-				<input type='text' name='form' />
-				<button>push</button>
-			</form>
-		);
-}
+		<label htmlFor='pullups'>Pullups</label>
+		<input
+			placeholder='pullups'
+			value={fitness.pullups}
+			name='pullups'
+			onChange={handleChange}
+			id='pullups'
+		/>
 
-export default Forms;
+		<button type='submit'>Submit</button>
+	</form>
+);
+
+export default FitnessForm;

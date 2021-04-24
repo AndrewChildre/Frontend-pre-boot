@@ -1,51 +1,26 @@
-// import React, { Component } from 'react';
-// import { makeStyles } from '@material-ui/core/styles';
-// import TextField from '@material-ui/core/TextField';
-// import axios from 'axios';
-// import FitnessGet from './FitnessGet';
-// import { Link, Route, Switch } from 'react-router-dom';
-
-
-// const useStyles = makeStyles((theme) => ({
-// 	root: {
-// 		'& > *': {
-// 			margin: theme.spacing(1),
-// 			width: '25ch',
-// 		},
-// 	},
-// }));
-
-// export default function BasicTextFields() {
-// 	const classes = useStyles();
-
-// 	return (
-// 		<>
-
-
-// 		<form>
-// 			<TextField id='filled-basic' label='Name' variant='filled' />
-// 			<TextField id='filled-basic' label='Pullups' variant='filled' />
-// 			<TextField id='filled-basic' label='Situps' variant='filled' />
-// 			<TextField id='filled-basic' label='Run Time' variant='filled' />
-// 		</form>
-// 		<FitnessGet />
-// 		</>
-// 	);
-// }
-
 import React, { useState, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 import { APIURL } from './config.js';
 import FitnessForm from './Forms.js';
-import FitnessGet from './FitnessGet';
-const FitnessCreate = () => {
-	const initialFitnessState = {
-		name: '',
-		pullups: '',
-	};
-	const [fitness, setFitness] = useState(initialFitnessState);
+
+const FitnessEdit = ({ match }) => {
+	const [fitness, setFitness] = useState(null);
 	const [createdId, setCreatedId] = useState(null);
 	const [error, setError] = useState(false);
+
+	useEffect(() => {
+		const url = `${APIURL}/results/${match.params.id}`;
+		fetch(url)
+			.then((response) => response.json())
+			.then((data) => {
+				setFitness({ name: data.name, title: data.pullups });
+			})
+			.catch(() => {
+				// Update the state if there was an error
+				// so we can give feedback to the user!
+				setError(true);
+			});
+	}, []);
 
 	const handleChange = (event) => {
 		// Every time the user types or pastes something
@@ -92,7 +67,7 @@ const FitnessCreate = () => {
 			// and take the user back to the "show" route which will
 			// display the newly updated movie.
 			.then((data) => {
-				setCreatedId(data.id);
+				setCreatedId(data._id);
 			})
 			.catch(() => {
 				// Update the state if there was an error
@@ -102,20 +77,21 @@ const FitnessCreate = () => {
 	};
 
 	if (createdId) {
-		return <Redirect to={`/results/${createdId}`} />;
+		return <Redirect to={`/fitness/${createdId}`} />;
 	}
 	return (
 		<>
-			<h3>Enter Results</h3>
+			<h3>Create a Movie</h3>
 			{error && <p>Something went wrong... Please try again!</p>}
-			<FitnessForm
-				fitness={fitness}
-				handleChange={handleChange}
-				handleSubmit={handleSubmit}
-			/>
-			<FitnessGet />
+			{fitness && (
+				<FitnessForm
+					fitness={fitness}
+					handleChange={handleChange}
+					handleSubmit={handleSubmit}
+				/>
+			)}
 		</>
 	);
 };
 
-export default FitnessCreate;
+export default FitnessEdit;
