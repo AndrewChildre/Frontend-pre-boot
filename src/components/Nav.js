@@ -81,6 +81,16 @@ const Nav = () => {
 								Rank System
 							</Button>
 						</ListItem>
+						<ListItem>
+							<Button color='primary' href='/hymn'>
+								Marine Hymn
+							</Button>
+						</ListItem>
+						<ListItem>
+							<Button color='primary' href='/M16'>
+								M16A4 Rifle
+							</Button>
+						</ListItem>
 
 						{/* {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
           <ListItem  button key={text}>

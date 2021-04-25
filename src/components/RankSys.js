@@ -5,21 +5,20 @@ import Paper from '@material-ui/core/Paper';
 import { Grid }from '@material-ui/core';
 import Divider from '@material-ui/core/Divider'
 import Container from '@material-ui/core/Container'
+import { blue, red } from '@material-ui/core/colors';
+import yellow from '@material-ui/core/colors/yellow';
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(0),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-    maxWidth: 350,
-    
-    
-
-
-    
-  },
+	root: {
+		flexGrow: 1,
+	},
+	paper: {
+		padding: theme.spacing(2),
+		textAlign: 'center',
+		color: theme.palette.text.secondary,
+		maxWidth: 350,
+		// backgroundColor: red[700],
+	},
+	bgc: {backgroundColor: blue[800]},
 }));
 
 export default function CenteredGrid() {
@@ -27,7 +26,7 @@ export default function CenteredGrid() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
+      <Grid className={classes.bgc} container spacing={3}>
         <Grid item xs={3}>
           <Paper className={classes.paper}><img style={{width:'100%',  height:'auto', paddingBottom: 20}} src="https://images02.military.com/sites/default/files/styles/full/public/2019-01/marines-insignia-pfc.png.jpg?itok=7E9oF3cN" alt=""/>
           <Divider />
