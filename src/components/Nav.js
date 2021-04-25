@@ -13,17 +13,29 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import MenuIcon from '@material-ui/icons/Menu';
 import Link from '@material-ui/core/Link';
+import { blue, red } from '@material-ui/core/colors';
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
     drw:{
         // background: ('red'),
     borderRadius: 3,
     border: 0,
-    color: 'blue',
+    color: 'white',
     height: 48,
-    padding: '0 30px',
-    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-    }
+    padding: '20px 30px',
+    
+    },
+	drawerBtn: {
+		color: 'blue',
+		marginBottom: 30
+		
+	},
+	fonts: {
+		color: 'red',
+		marginBottom: 15
+		
+	}
 })
 
 const Nav = () => {
@@ -34,12 +46,16 @@ const Nav = () => {
         setState(open)
     }
         const list = () => (
-            <div onClick={ToggleDrawer(false)}>
-            <List   className={classes.drw} >
-                <ListItem button>USMC</ListItem>
-            </List>
-            </div>
-        )
+					<div className={classes.drawerBtn} onClick={ToggleDrawer(false)}>
+						<List className={classes.drw}>
+								<Typography variant='h3'>	
+							<ListItem className={classes.drawerBtn} button>
+								USMC
+							</ListItem>
+								</Typography>
+						</List>
+					</div>
+				);
 
     return (
 			<div>
@@ -52,52 +68,69 @@ const Nav = () => {
 
 					<List>
 						<ListItem>
-							<Button color='primary' href='/'>
-								Home
+							<Button href='/'>
+								<Typography className={classes.fonts} variant='h5'>
+									Home
+								</Typography>
 							</Button>
 						</ListItem>
+
 						<ListItem>
-							<Button color='primary' href='/values'>
-								Values
+							<Button href='/values'>
+								<Typography className={classes.fonts} variant='h5'>
+									Values
+								</Typography>
 							</Button>
 						</ListItem>
 						<ListItem>
 							<Button color='primary' href='/fitness'>
-								Fitness
-							</Button>
-						</ListItem>
-						<ListItem>
-							<Button color='primary' href='/leadership'>
-								Leadership
-							</Button>
-						</ListItem>
-						<ListItem>
-							<Button color='primary' href='/orders'>
-								General Orders
-							</Button>
-						</ListItem>
-						<ListItem>
-							<Button color='primary' href='/rank'>
-								Rank System
-							</Button>
-						</ListItem>
-						<ListItem>
-							<Button color='primary' href='/hymn'>
-								Marine Hymn
-							</Button>
-						</ListItem>
-						<ListItem>
-							<Button color='primary' href='/M16'>
-								M16A4 Rifle
+								<Typography className={classes.fonts} variant='h5'>
+									Fitness
+								</Typography>
 							</Button>
 						</ListItem>
 
-						{/* {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem  button key={text}>
-            <ListItemIcon >{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))} */}
+						<ListItem>
+							<Button color='primary' href='/leadership'>
+								<Typography className={classes.fonts} variant='h5'>
+									Leadership
+								</Typography>
+							</Button>
+						</ListItem>
+
+						<ListItem>
+							<Button color='primary' href='/orders'>
+								<Typography className={classes.fonts} variant='h5'>
+									General
+									<br />
+									Orders
+								</Typography>
+							</Button>
+						</ListItem>
+
+						<ListItem>
+							<Button color='primary' href='/rank'>
+								<Typography className={classes.fonts} variant='h5'>
+									Rank System
+								</Typography>
+							</Button>
+						</ListItem>
+
+						<ListItem>
+							<Button color='primary' href='/hymn'>
+								<Typography className={classes.fonts} variant='h5'>
+									Marine Hymn{' '}
+								</Typography>
+							</Button>
+						</ListItem>
+
+						<ListItem>
+							<Button color='primary' href='/M16'>
+								<Typography className={classes.fonts} variant='h5'>
+									M16A4 Rifle
+								</Typography>
+							</Button>
+						</ListItem>
 					</List>
 				</Drawer>
 			</div>

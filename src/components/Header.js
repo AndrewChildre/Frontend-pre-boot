@@ -7,21 +7,27 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Nav from './Nav';
+import { blue, red } from '@material-ui/core/colors';
+import { ArrowLeft } from '@material-ui/icons';
 
 
 const useStyles = makeStyles((theme) => ({
-
-
 	root: {
 		flexGrow: 1,
-		
 	},
 	menuButton: {
 		marginRight: theme.spacing(2),
+		color: 'red',
 	},
 	title: {
 		flexGrow: 1,
+		
+		
 	},
+	barColor: {
+		background: 'blue',
+	},
+	
 }));
 
 export default function ButtonAppBar() {
@@ -29,17 +35,16 @@ export default function ButtonAppBar() {
 
 	return (
 		<div className={classes.root}>
-			<AppBar position='static'>
+			<AppBar className={classes.barColor} position='static'>
 				<Toolbar>
-					<IconButton
-						edge='start'
-						className={classes.menuButton}
-						color='inherit'
-						aria-label='menu'>
-						<Nav />
-					</IconButton>
-					<Typography variant='h6' className={classes.title}>
+					<Nav />
+
+					<Typography  variant='h4' className={classes.title}>
 						United States Marine Corps
+					</Typography>
+					<Typography variant='h6' >
+						Before Bootcamp<br/>
+						Study Guide
 					</Typography>
 					{/* <Button color='inherit'>Login</Button> */}
 				</Toolbar>
