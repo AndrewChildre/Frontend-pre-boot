@@ -1,6 +1,5 @@
 # Pre-Bootcamp Study Giude
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Introduction
 
@@ -12,5 +11,18 @@ There is a baseline of knowlegde that you will need before departing on your jou
 This frontend is developed on React and Material-UI.
 ### Other Thechnologies 
 HTML | CSS | JavaScript
+
+## Visuals
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<img width="1440" alt="Screen Shot 2021-04-26 at 1 07 50 PM" src="https://user-images.githubusercontent.com/35944206/116137737-279cfa80-a691-11eb-8639-f6f431f7250b.png">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<img width="1440" alt="Screen Shot 2021-04-26 at 1 08 14 PM" src="https://user-images.githubusercontent.com/35944206/116137799-3f747e80-a691-11eb-9502-4232e46ca43c.png">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<img width="1440" alt="Screen Shot 2021-04-26 at 1 08 37 PM" src="https://user-images.githubusercontent.com/35944206/116137908-65018800-a691-11eb-9e5f-e1582a1b8aec.png">
 
 
