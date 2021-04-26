@@ -24,5 +24,3 @@ HTML | CSS | JavaScript
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <img width="1440" alt="Screen Shot 2021-04-26 at 1 08 37 PM" src="https://user-images.githubusercontent.com/35944206/116137908-65018800-a691-11eb-9e5f-e1582a1b8aec.png">
-
-
