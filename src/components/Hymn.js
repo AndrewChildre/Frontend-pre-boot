@@ -12,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
 		padding: theme.spacing(2),
 		textAlign: 'center',
 		color: 'blue',
-		background: 'red'
+		background: 'red',
+		width: '100vw',
 	},
 	bodyColors: {
 		color: 'white',
@@ -25,28 +26,39 @@ export default function CenteredGrid() {
 
 	return (
 		<div className={classes.root}>
-			<Grid className={classes.bodyColors} container spacing={3}>
+			<Grid
+				spacing={5}
+				direction='column'
+				alignItems='center'
+				justify='center'
+				style={{ minHeight: '100vh' }}
+				className={classes.bodyColors}
+				container>
 				<Grid item xs={12}>
 					<Paper className={classes.toptitle}>
 						<Typography variant='h3'>Marines Hymn</Typography>
 					</Paper>
 				</Grid>
 				<Grid item xs={12}>
-					<Paper className={classes.bodyColors}>
+					<Paper style={{margin: '20px'}} className={classes.bodyColors}>
 						<Typography variant='h4'>
-							From the Halls of Montezuma To the shores of Tripoli; We fight our
-							country's battles In the air, on land, and sea; First to fight for
-							right and freedom And to keep our honor clean; We are proud to
-							claim the title Of United States Marine. <br />
-							Our flag's unfurled to every breeze From dawn to setting sun; We
-							have fought in ev'ry clime and place Where we could take a gun; In
-							the snow of far-off Northern lands And in sunny tropic scenes; You
-							will find us always on the job The United States Marines.
-							<br /> Here's good health to you and to our Corps Which we are
-							proud to serve; In many a strife we've fought for life And never
-							lost our nerve; If the Army and the Navy Ever look on Heaven's
-							scenes; They will find the streets are guarded By United States
-							Marines.
+							<p>
+								From the Halls of Montezuma To the shores of Tripoli; We fight
+								our country's battles In the air, on land, and sea; First to
+								fight for right and freedom And to keep our honor clean; We are
+								proud to claim the title Of United States Marine.
+							</p>
+							<p>
+								Our flag's unfurled to every breeze From dawn to setting sun; We
+								have fought in ev'ry clime and place Where we could take a gun;
+								In the snow of far-off Northern lands And in sunny tropic
+								scenes; You will find us always on the job The United States
+								Marines.
+							</p>
+							Here's good health to you and to our Corps Which we are proud to
+							serve; In many a strife we've fought for life And never lost our
+							nerve; If the Army and the Navy Ever look on Heaven's scenes; They
+							will find the streets are guarded By United States Marines.
 						</Typography>
 					</Paper>
 				</Grid>

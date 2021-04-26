@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { APIURL } from './config';
@@ -30,10 +29,10 @@ const FitnessGet = (props) => {
 	}
 
 	return (
-		<ul>
+		<ul class='returns'>
 			{fitness.map((fitness) => (
-				<li key={fitness.id}>
-					<Link to={`/fitness/${fitness.id}`}>{fitness.name}</Link>
+				<li  id='dots'key={fitness.id}>
+					<h3>{fitness.name}</h3>
 				</li>
 			))}
 		</ul>

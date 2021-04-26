@@ -35,7 +35,7 @@ const Fitness = ({ match }) => {
 	// Check if there was an error
 	// If there is give the user feedback!
 	if (error) {
-		return <div>Sorry, there was a problem getting the movies</div>;
+		return <div>Sorry, there was a problem</div>;
 	}
 
 	// Check if we have our movies
@@ -47,9 +47,9 @@ const Fitness = ({ match }) => {
 	// If none of the if statements ran
 	return (
 		<div>
-			<h3>Title: {fitness.name}</h3>
-			<p>Director: {fitness.pillups}</p>
-			<button onClick={onDeleteFitness}>Delete Movie</button>
+			<h3>Name: {fitness.name}</h3>
+			<p>Pullups: {fitness.pillups}</p>
+			<button onClick={onDeleteFitness}>Delete Fitness</button>
 			<Link to={`/results/${match.params.id}/edit`}>Update Movie</Link>
 		</div>
 	);

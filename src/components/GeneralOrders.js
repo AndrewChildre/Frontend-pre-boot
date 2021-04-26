@@ -36,7 +36,7 @@ export default function CenteredGrid() {
 				</Grid>
 				<Grid item sm={6}>
 					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJSoQVS7W6R2ywENCKUeTm4dgRioNX2iIHhA&usqp=CAU'
+						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7WqmuMQUO-h-M59CM1XnE3hbDEJjBSVbIpw&usqp=CAU'
 						alt='moto'
 					/>
 				</Grid>
@@ -60,7 +60,7 @@ export default function CenteredGrid() {
 				</Grid>
 				<Grid item sm={6}>
 					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpVNzCMwM8oJ8txpIeT-2Yj5e8Q0ckQBa8g&usqp=CAU'
+						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuHuQ-zgd6_Jfdct4NrdYqraSVcqgQeJWaFg&usqp=CAU'
 						alt='moto'
 					/>
 				</Grid>
@@ -116,13 +116,13 @@ export default function CenteredGrid() {
 				</Grid>
 				<Grid item sm={6}>
 					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqhg5K5EJnTahobqO4LDqqGD1d7i6dWSJJg&usqp=CAU'
+						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrZY6o9tB9mdHkYLDBH_jJfBzSNEV0Qk9Fow&usqp=CAU'
 						alt='moto'
 					/>
 				</Grid>
 				<Grid item sm={6}>
 					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpVNzCMwM8oJ8txpIeT-2Yj5e8Q0ckQBa8g&usqp=CAU'
+						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4navTR4gMnG7rL_4pNXntp_QMQN52k2erNg&usqp=CAU'
 						alt='moto'
 					/>
 				</Grid>
@@ -142,13 +142,13 @@ export default function CenteredGrid() {
 				</Grid>
 				<Grid item sm={6}>
 					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpVNzCMwM8oJ8txpIeT-2Yj5e8Q0ckQBa8g&usqp=CAU'
+						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC9Qz3RwCSv-mIiW5GmwcINaDKXkHZInzGsw&usqp=CAU'
 						alt='moto'
 					/>
 				</Grid>
 				<Grid item sm={6}>
 					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpVNzCMwM8oJ8txpIeT-2Yj5e8Q0ckQBa8g&usqp=CAU'
+						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH1bqiOIZHB-Q9s_iLbOul7ZmcZQyQ15qong&usqp=CAU'
 						alt='moto'
 					/>
 				</Grid>
@@ -165,6 +165,12 @@ export default function CenteredGrid() {
 						Salute all officers and all colors and standards not cased. Standard
 						military courtesy applies as senior members and color guard pass.
 					</Typography>
+				</Grid>
+				<Grid item sm={6}>
+					<img
+						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH1bqiOIZHB-Q9s_iLbOul7ZmcZQyQ15qong&usqp=CAU'
+						alt='moto'
+					/>
 				</Grid>
 				<Grid item sm={6}>
 					<Typography variant='h5'>

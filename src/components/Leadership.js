@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: 'center',
 		color: 'blue',
 		background: 'red',
+		width: '100vw',
 
 		// color: red[600]
 	},
@@ -33,10 +34,15 @@ export default function CenteredGrid() {
 	return (
 		<div className={classes.root}>
 			<Grid
-				alignItems='stretch'
+				
 				className={classes.bodyColors}
 				container
-				spacing={3}>
+				spacing={4}
+				direction='column'
+				alignItems='center'
+				justify='center'
+				style={{ minHeight: '100vh' }}
+				>
 				<Grid item xs={12}>
 					<Paper className={classes.toptitle}>
 						<Typography variant='h3'>Leadership</Typography>
@@ -72,18 +78,7 @@ export default function CenteredGrid() {
 						percent, the time is right to make an informed judgment.
 					</Typography>
 				</Grid>
-				<Grid item xs={6}>
-					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpVNzCMwM8oJ8txpIeT-2Yj5e8Q0ckQBa8g&usqp=CAU'
-						alt='moto'
-					/>
-				</Grid>
-				<Grid item xs={6}>
-					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqhg5K5EJnTahobqO4LDqqGD1d7i6dWSJJg&usqp=CAU'
-						alt='moto'
-					/>
-				</Grid>
+			
 				<Grid item xs={6}>
 					<Typography variant='h3'>Dependability</Typography>
 					<Typography variant='h6'>
@@ -105,18 +100,7 @@ export default function CenteredGrid() {
 						existing problems. Improvise, Adapt, Overcome!
 					</Typography>
 				</Grid>
-				<Grid item xs={6}>
-					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJSoQVS7W6R2ywENCKUeTm4dgRioNX2iIHhA&usqp=CAU'
-						alt='moto'
-					/>
-				</Grid>
-				<Grid item xs={6}>
-					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpVNzCMwM8oJ8txpIeT-2Yj5e8Q0ckQBa8g&usqp=CAU'
-						alt='moto'
-					/>
-				</Grid>
+			
 
 				<Grid item xs={6}>
 					<Typography variant='h3'>Decisiveness</Typography>{' '}
@@ -150,12 +134,8 @@ export default function CenteredGrid() {
 						what to say, when to say it, how to say it, and who to say it to.
 					</Typography>
 				</Grid>
-				<Grid item xs={6}>
-					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqhg5K5EJnTahobqO4LDqqGD1d7i6dWSJJg&usqp=CAU'
-						alt='moto'
-					/>
-				</Grid>
+				
+				
 				<Grid item xs={6}>
 					<img
 						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpVNzCMwM8oJ8txpIeT-2Yj5e8Q0ckQBa8g&usqp=CAU'
@@ -196,18 +176,7 @@ export default function CenteredGrid() {
 						his bare hands to handle the hot guns.
 					</Typography>
 				</Grid>
-				<Grid item xs={6}>
-					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpVNzCMwM8oJ8txpIeT-2Yj5e8Q0ckQBa8g&usqp=CAU'
-						alt='moto'
-					/>
-				</Grid>
-				<Grid item xs={6}>
-					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpVNzCMwM8oJ8txpIeT-2Yj5e8Q0ckQBa8g&usqp=CAU'
-						alt='moto'
-					/>
-				</Grid>
+				
 				<Grid item xs={6}>
 					<Typography variant='h3'>Bearing</Typography>
 					<Typography variant='h6'>
@@ -230,18 +199,7 @@ export default function CenteredGrid() {
 						particularly in difficult situations.
 					</Typography>
 				</Grid>
-				<Grid item xs={6}>
-					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqhg5K5EJnTahobqO4LDqqGD1d7i6dWSJJg&usqp=CAU'
-						alt='moto'
-					/>
-				</Grid>
-				<Grid item xs={6}>
-					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqhg5K5EJnTahobqO4LDqqGD1d7i6dWSJJg&usqp=CAU'
-						alt='moto'
-					/>
-				</Grid>
+			
 				<Grid item xs={6}>
 					<Typography variant='h3'>Courage</Typography>
 					<Typography variant='h6'>
@@ -275,18 +233,7 @@ export default function CenteredGrid() {
 						the best possible manner.
 					</Typography>
 				</Grid>
-				<Grid item xs={6}>
-					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpVNzCMwM8oJ8txpIeT-2Yj5e8Q0ckQBa8g&usqp=CAU'
-						alt='moto'
-					/>
-				</Grid>
-				<Grid item xs={6}>
-					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpVNzCMwM8oJ8txpIeT-2Yj5e8Q0ckQBa8g&usqp=CAU'
-						alt='moto'
-					/>
-				</Grid>
+		
 				<Grid item xs={6}>
 					<Typography variant='h3'>Enthusiasm</Typography>{' '}
 					<Typography variant='h6'>

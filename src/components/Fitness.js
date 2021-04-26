@@ -1,43 +1,9 @@
-// import React, { Component } from 'react';
-// import { makeStyles } from '@material-ui/core/styles';
-// import TextField from '@material-ui/core/TextField';
-// import axios from 'axios';
-// import FitnessGet from './FitnessGet';
-// import { Link, Route, Switch } from 'react-router-dom';
-
-
-// const useStyles = makeStyles((theme) => ({
-// 	root: {
-// 		'& > *': {
-// 			margin: theme.spacing(1),
-// 			width: '25ch',
-// 		},
-// 	},
-// }));
-
-// export default function BasicTextFields() {
-// 	const classes = useStyles();
-
-// 	return (
-// 		<>
-
-
-// 		<form>
-// 			<TextField id='filled-basic' label='Name' variant='filled' />
-// 			<TextField id='filled-basic' label='Pullups' variant='filled' />
-// 			<TextField id='filled-basic' label='Situps' variant='filled' />
-// 			<TextField id='filled-basic' label='Run Time' variant='filled' />
-// 		</form>
-// 		<FitnessGet />
-// 		</>
-// 	);
-// }
-
-import React, { useState, useEffect } from 'react';
+import React, {  useState, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 import { APIURL } from './config.js';
 import FitnessForm from './Forms.js';
 import FitnessGet from './FitnessGet';
+import FitnessUD from './FitnessUD'
 const FitnessCreate = () => {
 	const initialFitnessState = {
 		name: '',
@@ -106,14 +72,15 @@ const FitnessCreate = () => {
 	}
 	return (
 		<>
-			<h3>Enter Results</h3>
+			<h1 class='title'>Physical Fitness Results</h1>
 			{error && <p>Something went wrong... Please try again!</p>}
 			<FitnessForm
 				fitness={fitness}
 				handleChange={handleChange}
 				handleSubmit={handleSubmit}
 			/>
-			<FitnessGet />
+				<FitnessGet />
+				{/* <FitnessUD /> */}
 		</>
 	);
 };

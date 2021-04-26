@@ -17,6 +17,8 @@ const useStyles = makeStyles((theme) => ({
 		padding: theme.spacing(2),
 		textAlign: 'center',
 		color: theme.palette.text.secondary,
+		marginLeft: 10,
+		marginRight: 10
 		// maxWidth: 350,
 		// backgroundColor: red[700],
 	},
@@ -37,7 +39,7 @@ export default function CenteredGrid() {
 
   return (
 		<div className={classes.root}>
-			<Grid className={classes.bodyColors} container spacing={2}>
+			<Grid  className={classes.bodyColors} container spacing={2}>
 				<Grid item xs={12}>
 					<Paper className={classes.toptitle}>
 						<Typography variant='h3'>Rank Structure</Typography>
