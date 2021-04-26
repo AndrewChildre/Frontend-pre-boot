@@ -12,7 +12,7 @@ This frontend is developed on React and Material-UI.
 ### Other Thechnologies 
 HTML | CSS | JavaScript
 ## Try it out
- [USMC Pre-bootcamp-study](https://pre-boot-frontend.herokuapp.com/).
+ [USMC Pre-bootcamp-study](https://pre-boot-frontend.herokuapp.com/)
 ## Visuals
 <p>&nbsp;</p>
 <p>&nbsp;</p>
