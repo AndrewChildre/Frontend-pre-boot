@@ -13,8 +13,6 @@ const Fitness = ({ match }) => {
 			.then((response) => response.json())
 			.then(setFitness)
 			.catch(() => {
-				// Update the state if there was an error
-				// so we can give feedback to the user!
 				setError(true);
 			});
 	}, []);
@@ -27,24 +25,19 @@ const Fitness = ({ match }) => {
 			})
 			.catch(console.error);
 	};
-	// If we deleted the movie, redirect back to the movies list
+
 	if (deleted) {
 		return <Redirect to='/results' />;
 	}
 
-	// Check if there was an error
-	// If there is give the user feedback!
 	if (error) {
 		return <div>Sorry, there was a problem</div>;
 	}
 
-	// Check if we have our movies
-	// Display "Loading..." if not
 	if (!fitness) {
 		return <div>Loading...</div>;
 	}
 
-	// If none of the if statements ran
 	return (
 		<div>
 			<h3>Name: {fitness.name}</h3>

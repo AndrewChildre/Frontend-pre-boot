@@ -1,9 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Fitness from './components/Fitness';
-import Forms from './components/Forms'
-import Nav from './components/Nav'
 import Header from './components/Header'
 import Values from './components/Values'
 import Home from './components/Home'

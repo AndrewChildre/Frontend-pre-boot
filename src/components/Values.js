@@ -2,10 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import { blue, red } from '@material-ui/core/colors';
-import { withTheme } from '@material-ui/styles';
 import Typography from '@material-ui/core/Typography';
-import { spacing } from '@material-ui/system';
+
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -73,18 +71,7 @@ export default function CenteredGrid() {
 							and to make tough decisions under stress and pressure.
 						</Typography>
 					</Grid>
-					{/* <Grid item xs={6}>
-						<img
-							src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpVNzCMwM8oJ8txpIeT-2Yj5e8Q0ckQBa8g&usqp=CAU'
-							alt='moto'
-						/>
-					</Grid>
-					<Grid item xs={6}>
-						<img
-							src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqhg5K5EJnTahobqO4LDqqGD1d7i6dWSJJg&usqp=CAU'
-							alt='moto'
-						/>
-					</Grid> */}
+				
 					<Grid item xs={6}>
 						<Typography variant='h3'>COMMITMENT</Typography>
 						<br />

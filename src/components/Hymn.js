@@ -40,7 +40,7 @@ export default function CenteredGrid() {
 					</Paper>
 				</Grid>
 				<Grid item xs={12}>
-					<Paper style={{margin: '20px'}} className={classes.bodyColors}>
+					<Paper style={{ margin: '20px' }} className={classes.bodyColors}>
 						<Typography variant='h4'>
 							<p>
 								From the Halls of Montezuma To the shores of Tripoli; We fight

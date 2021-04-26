@@ -7,19 +7,16 @@ const FitnessGet = (props) => {
 	const [error, setError] = useState(false);
 
 	useEffect(() => {
-	
 		fetch(`${APIURL}/results`)
 			.then((response) => response.json())
 			.then((data) => {
-			
 				setFitness(data);
 			})
 			.catch(() => {
-			
 				setError(true);
 			});
 	}, []);
-       
+
 	if (error) {
 		return <div>Did not get</div>;
 	}
@@ -31,7 +28,7 @@ const FitnessGet = (props) => {
 	return (
 		<ul class='returns'>
 			{fitness.map((fitness) => (
-				<li  id='dots'key={fitness.id}>
+				<li id='dots' key={fitness.id}>
 					<h3>{fitness.name}</h3>
 				</li>
 			))}

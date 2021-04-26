@@ -1,12 +1,8 @@
-
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
-import { Grid }from '@material-ui/core';
-import Divider from '@material-ui/core/Divider'
-import Container from '@material-ui/core/Container'
-import { blue, red } from '@material-ui/core/colors';
-import yellow from '@material-ui/core/colors/yellow';
+import { Grid } from '@material-ui/core';
+import Divider from '@material-ui/core/Divider';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
@@ -18,9 +14,7 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: 'center',
 		color: theme.palette.text.secondary,
 		marginLeft: 10,
-		marginRight: 10
-		// maxWidth: 350,
-		// backgroundColor: red[700],
+		marginRight: 10,
 	},
 	toptitle: {
 		padding: theme.spacing(2),
@@ -29,17 +23,16 @@ const useStyles = makeStyles((theme) => ({
 		background: 'red',
 	},
 	bodyColors: {
-
 		background: 'blue',
 	},
 }));
 
 export default function CenteredGrid() {
-  const classes = useStyles();
+	const classes = useStyles();
 
-  return (
+	return (
 		<div className={classes.root}>
-			<Grid  className={classes.bodyColors} container spacing={2}>
+			<Grid className={classes.bodyColors} container spacing={2}>
 				<Grid item xs={12}>
 					<Paper className={classes.toptitle}>
 						<Typography variant='h3'>Rank Structure</Typography>
@@ -271,7 +264,11 @@ export default function CenteredGrid() {
 							alt=''
 						/>
 						<Divider />
-						<p>Maj<br/>Major</p>
+						<p>
+							Maj
+							<br />
+							Major
+						</p>
 					</Paper>
 				</Grid>
 				<Grid item xs={6}>
@@ -282,7 +279,11 @@ export default function CenteredGrid() {
 							alt=''
 						/>
 						<Divider />
-						<p>LtCol<br/>Lieutenant Colonel</p>
+						<p>
+							LtCol
+							<br />
+							Lieutenant Colonel
+						</p>
 					</Paper>
 				</Grid>
 				<Grid item xs={6}>
@@ -293,7 +294,11 @@ export default function CenteredGrid() {
 							alt=''
 						/>
 						<Divider />
-						<p>Col<br/>Colonel</p>
+						<p>
+							Col
+							<br />
+							Colonel
+						</p>
 					</Paper>
 				</Grid>
 				<Grid item xs={6}>
@@ -304,7 +309,11 @@ export default function CenteredGrid() {
 							alt=''
 						/>
 						<Divider />
-						<p>BGen<br/>Brigadier General</p>
+						<p>
+							BGen
+							<br />
+							Brigadier General
+						</p>
 					</Paper>
 				</Grid>
 				<Grid item xs={6}>
@@ -315,7 +324,11 @@ export default function CenteredGrid() {
 							alt=''
 						/>
 						<Divider />
-						<p>MajGen<br/>Major General</p>
+						<p>
+							MajGen
+							<br />
+							Major General
+						</p>
 					</Paper>
 				</Grid>
 				<Grid item xs={6}>
@@ -326,7 +339,11 @@ export default function CenteredGrid() {
 							alt=''
 						/>
 						<Divider />
-						<p>LtGen<br/>Lieutenant General</p>
+						<p>
+							LtGen
+							<br />
+							Lieutenant General
+						</p>
 					</Paper>
 				</Grid>
 				<Grid item xs={6}>
@@ -337,7 +354,11 @@ export default function CenteredGrid() {
 							alt=''
 						/>
 						<Divider />
-						<p>Gen<br/>General</p>
+						<p>
+							Gen
+							<br />
+							General
+						</p>
 					</Paper>
 				</Grid>
 				<Grid item xs={6}>

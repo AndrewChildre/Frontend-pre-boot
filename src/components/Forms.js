@@ -2,7 +2,6 @@ import React from 'react';
 
 const FitnessForm = ({ fitness, handleSubmit, handleChange }) => (
 	<form onSubmit={handleSubmit}>
-		
 		<input
 			placeholder='Name'
 			value={fitness.name}
@@ -10,7 +9,8 @@ const FitnessForm = ({ fitness, handleSubmit, handleChange }) => (
 			onChange={handleChange}
 			required
 			id='name'
-		/><br/>
+		/>
+		<br />
 
 		<input
 			placeholder='pullups'
@@ -18,7 +18,8 @@ const FitnessForm = ({ fitness, handleSubmit, handleChange }) => (
 			name='pullups'
 			onChange={handleChange}
 			id='pullups'
-		/><br/>
+		/>
+		<br />
 		<input
 			placeholder='Situps'
 			value={fitness.situps}
@@ -26,7 +27,8 @@ const FitnessForm = ({ fitness, handleSubmit, handleChange }) => (
 			onChange={handleChange}
 			required
 			id='situps'
-		/><br/>
+		/>
+		<br />
 		<input
 			placeholder='Runtime'
 			value={fitness.runtime}
@@ -34,9 +36,12 @@ const FitnessForm = ({ fitness, handleSubmit, handleChange }) => (
 			onChange={handleChange}
 			required
 			id='runtime'
-		/><br/>
+		/>
+		<br />
 
-		<button class='btn-1' type='submit'>Submit</button>
+		<button class='btn-1' type='submit'>
+			Submit
+		</button>
 	</form>
 );
 
