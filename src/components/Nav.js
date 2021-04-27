@@ -11,17 +11,19 @@ const useStyles = makeStyles({
 	drw: {
 		borderRadius: 3,
 		border: 0,
-		color: 'white',
+		color: 'red',
 		height: 48,
 		padding: '20px 30px',
 	},
 	drawerBtn: {
-		color: 'blue',
-		marginBottom: 30,
+		color: 'red',
+		background: 'blue',
+		paddingBottom: 80,
 	},
 	fonts: {
 		color: 'red',
-		marginBottom: 15,
+		
+		paddingBottom: 17
 	},
 });
 
@@ -52,7 +54,7 @@ const Nav = () => {
 			<Drawer anchor={'left'} open={state} onClose={ToggleDrawer(false)}>
 				{list()}
 
-				<List>
+				<List style={{  backgroundColor: 'blue'}}>
 					<ListItem>
 						<Button href='/'>
 							<Typography className={classes.fonts} variant='h5'>
@@ -112,7 +114,7 @@ const Nav = () => {
 
 					<ListItem>
 						<Button color='primary' href='/M16'>
-							<Typography className={classes.fonts} variant='h5'>
+							<Typography style={{paddingBottom: 100}} className={classes.fonts} variant='h5'>
 								M16A4 Rifle
 							</Typography>
 						</Button>

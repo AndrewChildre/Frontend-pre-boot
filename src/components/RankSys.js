@@ -10,17 +10,19 @@ const useStyles = makeStyles((theme) => ({
 		flexGrow: 1,
 	},
 	paper: {
-		padding: theme.spacing(2),
+		padding: theme.spacing(3),
 		textAlign: 'center',
 		color: theme.palette.text.secondary,
 		marginLeft: 10,
 		marginRight: 10,
+		
 	},
 	toptitle: {
 		padding: theme.spacing(2),
 		textAlign: 'center',
 		color: 'blue',
 		background: 'red',
+
 	},
 	bodyColors: {
 		background: 'blue',
@@ -32,12 +34,12 @@ export default function CenteredGrid() {
 
 	return (
 		<div className={classes.root}>
-			<Grid className={classes.bodyColors} container spacing={2}>
-				<Grid item xs={12}>
-					<Paper className={classes.toptitle}>
-						<Typography variant='h3'>Rank Structure</Typography>
-					</Paper>
-				</Grid>
+			<Grid item xs={12}>
+				<Paper className={classes.toptitle}>
+					<Typography variant='h3'>Rank Structure</Typography>
+				</Paper>
+			</Grid>
+			<Grid spacing={2} className={classes.bodyColors} container>
 				<Grid item xs={3}>
 					<Paper className={classes.paper}>
 						<img
@@ -198,7 +200,7 @@ export default function CenteredGrid() {
 				<Grid item xs={6}>
 					<Paper className={classes.paper}>
 						<img
-							style={{ width: '100%', height: 'auto', paddingBottom: 20 }}
+							style={{ width: '100%', height: 'auto', paddingBottom: 80 }}
 							src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_r3zpNoVzQXYs7fcJ9_g79UG9H8WSJWSkSw&usqp=CAU'
 							alt=''
 						/>

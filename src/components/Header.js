@@ -4,20 +4,27 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Nav from './Nav';
+import { red } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
+		paddingBottom: 0,
 	},
 	menuButton: {
-		marginRight: theme.spacing(2),
+		marginRight: theme.spacing(1),
+		color: 'white',
+	},
+	titleHome: {
+		flexGrow: 1,
 		color: 'red',
 	},
-	title: {
-		flexGrow: 1,
+	title2: {
+		color: 'red',
+		paddingBottom: 10
 	},
 	barColor: {
-		background: 'blue',
+		background: '#0d24ae',
 	},
 }));
 
@@ -27,13 +34,13 @@ export default function ButtonAppBar() {
 	return (
 		<div className={classes.root}>
 			<AppBar className={classes.barColor} position='static'>
-				<Toolbar>
+				<Toolbar >
 					<Nav />
 
-					<Typography variant='h4' className={classes.title}>
+					<Typography variant='h4' className={classes.titleHome}>
 						United States Marine Corps
 					</Typography>
-					<Typography variant='h6'>
+					<Typography variant='h6' className={classes.title2} >
 						Before Bootcamp
 						<br />
 						Study Guide

@@ -14,10 +14,15 @@ const useStyles = makeStyles((theme) => ({
 		color: 'blue',
 		background: 'red',
 		width: '100vw',
+		marginTop: 0,
 	},
 	bodyColors: {
 		color: 'white',
 		background: 'blue',
+	},
+	subTitle: {
+		marginTop: 70,
+		paddingBottom: 30,
 	},
 }));
 
@@ -29,24 +34,26 @@ export default function CenteredGrid() {
 			<Grid
 				className={classes.bodyColors}
 				container
-				spacing={4}
+				spacing={0}
 				direction='column'
 				alignItems='center'
 				justify='center'
-				style={{ minHeight: '100vh' }}>
+				style={{ minHeight: '90vh' }}>
 				<Grid item xs={12}>
 					<Paper className={classes.toptitle}>
 						<Typography variant='h3'>Leadership</Typography>
 					</Paper>
 				</Grid>
-				<Grid item xs={6}>
+				<Grid className={classes.subTitle} item xs={6}>
 					<img
 						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJSoQVS7W6R2ywENCKUeTm4dgRioNX2iIHhA&usqp=CAU'
 						alt='moto'
 					/>
 				</Grid>
 				<Grid item xs={6}>
-					<Typography variant='h3'>Justice</Typography>
+					<Typography className={classes.subTitle} variant='h3'>
+						Justice
+					</Typography>
 					<Typography variant='h6'>
 						Justice is the practice of being fair and consistent. A just person
 						gives consideration to each side of a situation and bases rewards or
@@ -56,7 +63,9 @@ export default function CenteredGrid() {
 					</Typography>
 				</Grid>
 				<Grid item xs={6}>
-					<Typography variant='h3'>Judgment</Typography>{' '}
+					<Typography className={classes.subTitle} variant='h3'>
+						Judgment
+					</Typography>{' '}
 					<Typography variant='h6'>
 						Often, leaders must assess situations quickly and without
 						significant time to reflect. The Marine Corps refers to the “70
@@ -71,7 +80,9 @@ export default function CenteredGrid() {
 				</Grid>
 
 				<Grid item xs={6}>
-					<Typography variant='h3'>Dependability</Typography>
+					<Typography className={classes.subTitle} variant='h3'>
+						Dependability
+					</Typography>
 					<Typography variant='h6'>
 						Amidst the stress and chaos of combat, there often is no telling how
 						people will react. A hero one day may be a catatonic wreck the next.
@@ -83,7 +94,9 @@ export default function CenteredGrid() {
 					</Typography>
 				</Grid>
 				<Grid item xs={6}>
-					<Typography variant='h3'>Initiative</Typography>
+					<Typography className={classes.subTitle} variant='h3'>
+						Initiative
+					</Typography>
 					<Typography variant='h6'>
 						Find a way to take the initiative; don’t do it for the recognition
 						or for the glory, do it to help accomplish the mission. Think
@@ -93,7 +106,9 @@ export default function CenteredGrid() {
 				</Grid>
 
 				<Grid item xs={6}>
-					<Typography variant='h3'>Decisiveness</Typography>{' '}
+					<Typography className={classes.subTitle} variant='h3'>
+						Decisiveness
+					</Typography>{' '}
 					<Typography variant='h6'>
 						Research indicates that most people make decisions intuitively
 						rather than analytically more than 90 percent of the time. The
@@ -110,7 +125,9 @@ export default function CenteredGrid() {
 				</Grid>
 
 				<Grid item xs={6}>
-					<Typography variant='h3'>Tact</Typography>
+					<Typography className={classes.subTitle} variant='h3'>
+						Tact
+					</Typography>
 					<Typography variant='h6'>
 						Tact is the ability to communicate in the language that best allows
 						a listener to understand the message or meaning that’s being
@@ -125,14 +142,16 @@ export default function CenteredGrid() {
 					</Typography>
 				</Grid>
 
-				<Grid item xs={6}>
+				<Grid className={classes.subTitle} item xs={6}>
 					<img
 						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpVNzCMwM8oJ8txpIeT-2Yj5e8Q0ckQBa8g&usqp=CAU'
 						alt='moto'
 					/>
 				</Grid>
 				<Grid item xs={6}>
-					<Typography variant='h3'>Integrity</Typography>{' '}
+					<Typography className={classes.subTitle} variant='h3'>
+						Integrity
+					</Typography>
 					<Typography variant='h6'>
 						Integrity in a leader is reflected by honesty as well as a desire to
 						inspire and a devotion of values that the leader constantly tried to
@@ -151,7 +170,9 @@ export default function CenteredGrid() {
 				</Grid>
 
 				<Grid item xs={6}>
-					<Typography variant='h3'>Endurance</Typography>
+					<Typography className={classes.subTitle} variant='h3'>
+						Endurance
+					</Typography>
 					<Typography variant='h6'>
 						The enduring leader defaults to responsibility. If something must be
 						done, then it must be done, even if the best resources or relevant
@@ -167,7 +188,9 @@ export default function CenteredGrid() {
 				</Grid>
 
 				<Grid item xs={6}>
-					<Typography variant='h3'>Bearing</Typography>
+					<Typography className={classes.subTitle} variant='h3'>
+						Bearing
+					</Typography>
 					<Typography variant='h6'>
 						A Marine with bearing is driven toward a goal with purpose, jumping
 						at opportunities with self-improvement that increase his ability to
@@ -179,7 +202,9 @@ export default function CenteredGrid() {
 				</Grid>
 
 				<Grid item xs={6}>
-					<Typography variant='h3'>Unselfishness</Typography>
+					<Typography className={classes.subTitle} variant='h3'>
+						Unselfishness
+					</Typography>
 					<Typography variant='h6'>
 						Unselfish leaders make decisions that benefit as many as possible,
 						without worrying too much about themselves. They look out for the
@@ -190,7 +215,9 @@ export default function CenteredGrid() {
 				</Grid>
 
 				<Grid item xs={6}>
-					<Typography variant='h3'>Courage</Typography>
+					<Typography className={classes.subTitle} variant='h3'>
+						Courage
+					</Typography>
 					<Typography variant='h6'>
 						Courage is never an easy commodity to find, whether it’s
 						disciplining a subordinate, standing up to superiors, or facing
@@ -205,7 +232,9 @@ export default function CenteredGrid() {
 				</Grid>
 
 				<Grid item xs={6}>
-					<Typography variant='h3'>Knowledge</Typography>
+					<Typography className={classes.subTitle} variant='h3'>
+						Knowledge
+					</Typography>
 					<Typography variant='h6'>
 						The business of knowing what to do and how to do it lifts the leader
 						above the crowd. Knowledge goes beyond the facts of the job; it is
@@ -224,7 +253,9 @@ export default function CenteredGrid() {
 				</Grid>
 
 				<Grid item xs={6}>
-					<Typography variant='h3'>Enthusiasm</Typography>{' '}
+					<Typography className={classes.subTitle} variant='h3'>
+						Enthusiasm
+					</Typography>
 					<Typography variant='h6'>
 						When we’re enthusiastic about something, we’re willing to sacrifice
 						for it. People who are enthusiastic about a cause will sacrifice

@@ -13,6 +13,7 @@ const useStyles = makeStyles({
 		margin: 'auto',
 	},
 	media: {
+		marginTop: 20,
 		height: 480,
 		width: 550,
 	},
@@ -22,8 +23,9 @@ export default function MediaCard() {
 	const classes = useStyles();
 
 	return (
-		<Container maxWidth='sm'>
-			<Card className={classes.root}>
+		<div >
+		<Container  maxWidth='sm'>
+			<Card  className={classes.root}>
 				<CardActionArea>
 					<CardMedia
 						className={classes.media}
@@ -43,5 +45,6 @@ export default function MediaCard() {
 				</CardActionArea>
 			</Card>
 		</Container>
+		</div>
 	);
 }

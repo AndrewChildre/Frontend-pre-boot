@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
 	bodyColors: {
 		color: 'white',
 		background: 'blue',
+		
 	},
 }));
 
@@ -27,11 +28,10 @@ export default function CenteredGrid() {
 	return (
 		<div className={classes.root}>
 			<Grid
-				spacing={5}
+				spacing={0}
 				direction='column'
 				alignItems='center'
 				justify='center'
-				style={{ minHeight: '100vh' }}
 				className={classes.bodyColors}
 				container>
 				<Grid item xs={12}>
@@ -40,7 +40,7 @@ export default function CenteredGrid() {
 					</Paper>
 				</Grid>
 				<Grid item xs={12}>
-					<Paper style={{ margin: '20px' }} className={classes.bodyColors}>
+					<Paper style={{ margin: '30px' }} className={classes.bodyColors}>
 						<Typography variant='h4'>
 							<p>
 								From the Halls of Montezuma To the shores of Tripoli; We fight
@@ -62,7 +62,7 @@ export default function CenteredGrid() {
 						</Typography>
 					</Paper>
 				</Grid>
-				<Grid item xs={6}>
+				<Grid style={{padding: 50}} item xs={6}>
 					<Paper className={classes.bodyColors}>
 						<img
 							src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXwpSn7ZiN0SMOPAyQq5YovbWEKC2z3e5d3g&usqp=CAU'

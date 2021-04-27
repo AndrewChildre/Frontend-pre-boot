@@ -3,38 +3,49 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import { GridList } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
+
 	},
 	toptitle: {
 		padding: theme.spacing(2),
 		textAlign: 'center',
 		color: 'blue',
 		background: 'red',
+		marginBottom: 30
+		
 	},
 	bodyColors: {
 		color: 'white',
-		background: 'blue',
+		background: 'blue',	
 	},
+	listMargin: {
+		alignItems:'center',
+		margin: 20
+
+	},
+	customMargin: {
+		marginBottom: 20
+	}
 }));
 
 export default function CenteredGrid() {
 	const classes = useStyles();
 
 	return (
-		<div className={classes.root}>
-			<Grid
-				alignItems='stretch'
-				className={classes.bodyColors}
-				container
-				spacing={3}>
+		<div >
+			<Grid container justify='space-around'  alignItems='center' className={classes.bodyColors}>
 				<Grid item xs={12}>
 					<Typography variant='h3'>
-						<Paper className={classes.toptitle}>General Orders</Paper>
+						<Paper className={classes.toptitle} >General Orders</Paper>
 					</Typography>
 				</Grid>
-				<Grid item sm={6}>
+				
+				<Grid  container className={classes.listMargin} >
+
+				<Grid className={classes.customMargin} item sm={6}>
 					<img
 						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7WqmuMQUO-h-M59CM1XnE3hbDEJjBSVbIpw&usqp=CAU'
 						alt='moto'
@@ -48,8 +59,9 @@ export default function CenteredGrid() {
 						your area.
 					</Typography>
 				</Grid>
-				<Grid item sm={6}>
-					<Typography variant='h5'>
+				<Grid className={classes.customMargin}item sm={6}>
+					
+					<Typography variant='h6' >
 						Walk my post in a military manner, keeping always on the alert and
 						observing everything that takes place within sight or hearing. Stay
 						observant with keen attention to details. It is easy to get
@@ -57,6 +69,7 @@ export default function CenteredGrid() {
 						many people to deal with. But your ability to pay attention to your
 						surroundings will save your life and others.
 					</Typography>
+				
 				</Grid>
 				<Grid item sm={6}>
 					<img
@@ -66,7 +79,7 @@ export default function CenteredGrid() {
 				</Grid>
 				<Grid item sm={6}>
 					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqhg5K5EJnTahobqO4LDqqGD1d7i6dWSJJg&usqp=CAU'
+						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-S6AIrhT1Ejkax04TSnwMFfPrG0LOgmkSWg&usqp=CAU'
 						alt='moto'
 					/>
 				</Grid>
@@ -87,11 +100,11 @@ export default function CenteredGrid() {
 				</Grid>
 				<Grid item sm={6}>
 					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJSoQVS7W6R2ywENCKUeTm4dgRioNX2iIHhA&usqp=CAU'
+						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGCl9EIKL2CL7deEVhTWlZd57VzOOv5h6Rmw&usqp=CAU'
 						alt='moto'
 					/>
 				</Grid>
-				<Grid item sm={6}>
+				<Grid className={classes.customMargin} item sm={6}>
 					<img
 						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpVNzCMwM8oJ8txpIeT-2Yj5e8Q0ckQBa8g&usqp=CAU'
 						alt='moto'
@@ -105,7 +118,7 @@ export default function CenteredGrid() {
 					</Typography>
 				</Grid>
 
-				<Grid item sm={6}>
+				<Grid className={classes.customMargin} item sm={6}>
 					<Typography variant='h5'>
 						To receive, obey, and pass on to the sentry who relieves me, all
 						orders from the Commanding Officer, Officer of the Day, Officers,
@@ -168,7 +181,14 @@ export default function CenteredGrid() {
 				</Grid>
 				<Grid item sm={6}>
 					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH1bqiOIZHB-Q9s_iLbOul7ZmcZQyQ15qong&usqp=CAU'
+						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE12E6dwS3Nbnqt2vwgMgHsI7p_YTByg1CNg&usqp=CAU'
+						alt='moto'
+					/>
+				</Grid>
+
+					<Grid item sm={6}>
+					<img
+						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb71NuTrtcSYyAuipsA5H5H77QPqAX7iHdxA&usqp=CAUs'
 						alt='moto'
 					/>
 				</Grid>
@@ -179,6 +199,8 @@ export default function CenteredGrid() {
 						pass without proper authority. Stay vigilant! Make sure everyone who
 						enters the area you protect are authorized.
 					</Typography>
+				</Grid>
+				
 				</Grid>
 			</Grid>
 		</div>
