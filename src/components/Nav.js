@@ -11,7 +11,7 @@ const useStyles = makeStyles({
 	drw: {
 		borderRadius: 3,
 		border: 0,
-		color: 'red',
+		color: 'silver',
 		height: 48,
 		padding: '20px 30px',
 	},
@@ -21,7 +21,7 @@ const useStyles = makeStyles({
 		paddingBottom: 80,
 	},
 	fonts: {
-		color: 'red',
+		color: 'silver',
 		
 		paddingBottom: 17
 	},
