@@ -10,6 +10,7 @@ import GeneralOrders from './components/GeneralOrders'
 import RankSys from './components/RankSys';
 import Hymn from './components/Hymn'
 import M16 from './components/M16'
+import testPage from './components/testPage';
 function App() {
   return (
 		<div className='App'>
@@ -26,6 +27,7 @@ function App() {
 					<Route path='/rank' exact component={RankSys} />
 					<Route path='/hymn' exact component={Hymn} /> 
 					<Route path='/M16' exact component={M16} />
+					<Route path='/test' exact component={testPage} />
 				</Router>
 			</main>
 		</div>
