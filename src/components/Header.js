@@ -17,14 +17,15 @@ const useStyles = makeStyles((theme) => ({
 	},
 	titleHome: {
 		flexGrow: 1,
-		color: '#D4AF37',
+		color: 'silver',
 	},
 	title2: {
-		color: 'white',
+		color: 'silver',
 		paddingBottom: 10,
 	},
 	barColor: {
-		background: '#940000',
+		background: 'black',
+		
 	},
 }));
 

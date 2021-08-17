@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-import { Slide, Fade } from 'react-slideshow-image';
+import { Slide, Fade, Zoom} from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import usmc1 from '../assets/usmc1.jpeg';
 import usmcsilent from '../assets/usmcsilent.jpeg'
@@ -17,11 +17,21 @@ const testPage = () => {
 		fontSize: '30px',
      
 	};
+     const zoomInProperties = {
+				arrows: false,
+				scale: 2.4,
+			};
+         const fadeProperties = {
+             arrows: false,
+             duration: 3000,
+             
+
+         }
 
 
     return (
 			<div>
-				<Slide>
+				<Zoom {...zoomInProperties}>
 					<div>
 						<img
 							src='https://wallpapercave.com/wp/LUG7jQC.png'
@@ -59,11 +69,11 @@ const testPage = () => {
 							alt='#'
 						/>
 					</div>
-				</Slide>
+				</Zoom>
 
 				<Grid container spacing={0}>
 					<Grid item xs={12} md={4}>
-						<Fade>
+						<Fade {...fadeProperties}>
 							<div style={{ backgroundColor: 'black' }}>
 								<img
 									src='https://i.pinimg.com/474x/2c/8d/9d/2c8d9dc29a40f64ce3d55f01280519a5.jpg'
