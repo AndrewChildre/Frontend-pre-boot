@@ -4,7 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Nav from './Nav';
-import { red } from '@material-ui/core/colors';
+
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -17,14 +17,14 @@ const useStyles = makeStyles((theme) => ({
 	},
 	titleHome: {
 		flexGrow: 1,
-		color: 'Silver',
+		color: '#D4AF37',
 	},
 	title2: {
 		color: 'white',
-		paddingBottom: 10
+		paddingBottom: 10,
 	},
 	barColor: {
-		background: '#0d24ae',
+		background: '#940000',
 	},
 }));
 
