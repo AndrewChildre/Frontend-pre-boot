@@ -1,22 +1,21 @@
 
 
 import React from 'react';
-import { Slide, Fade, Zoom} from 'react-slideshow-image';
+import { Fade, Zoom} from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import usmc1 from '../assets/usmc1.jpeg';
+import usmcAnphib from '../assets/usmcAnphib.jpeg'
 import usmcsilent from '../assets/usmcsilent.jpeg'
-import usmcsymbol from '../assets/usmcsymbol.jpeg'
+import usmcHelo from '../assets/usmcHelo.jpeg'
 import Grid from '@material-ui/core/Grid';
-
+import usmcCombat from '../assets/usmcCombat.jpeg'
+import usmcPain from '../assets/usmcPain.jpeg'
+import usmcReagan from '../assets/usmcReagan.jpeg'
+import usmcSemper from '../assets/usmcSemper.jpeg'
+import usmcFlag from '../assets/usmcFlag.jpeg'
+import usmcFront from '../assets/usmcFront.webp'
 const testPage = () => {
 
-  const style = {
-		textAlign: 'center',
-		background: 'teal',
-		// padding: '200px 0',
-		fontSize: '30px',
-     
-	};
+
      const zoomInProperties = {
 				arrows: false,
 				scale: 2.4,
@@ -26,7 +25,11 @@ const testPage = () => {
              duration: 3000,
              
 
-         }
+         };
+          const fadeProperties2 = {
+						arrows: false,
+						duration: 3500,
+					};
 
 
     return (
@@ -34,7 +37,7 @@ const testPage = () => {
 				<Zoom {...zoomInProperties}>
 					<div>
 						<img
-							src='https://wallpapercave.com/wp/LUG7jQC.png'
+							src={usmcFront}
 							alt='#'
 							style={{
 								objectFit: 'cover',
@@ -59,7 +62,7 @@ const testPage = () => {
 					<div>
 						{' '}
 						<img
-							src='https://www.thebalancecareers.com/thmb/iN_LMg4G4D6PjR-4KXt80oPt4ww=/2125x1411/filters:fill(auto,1)/a-red-flag-of-the-united-states-marine-corps-177097072-5a9c640d43a1030037315f99.jpg'
+							src={usmcFlag}
 							style={{
 								objectFit: '',
 
@@ -76,14 +79,14 @@ const testPage = () => {
 						<Fade {...fadeProperties}>
 							<div style={{ backgroundColor: 'black' }}>
 								<img
-									src='https://i.pinimg.com/474x/2c/8d/9d/2c8d9dc29a40f64ce3d55f01280519a5.jpg'
+									src={usmcSemper}
 									style={{ objectFit: 'cover', height: 300 }}
 									alt='#'
 								/>
 							</div>
 							<div style={{ backgroundColor: 'black' }}>
 								<img
-									src='https://www.wallpapertip.com/wmimgs/236-2366176_marine-quotes-happy-birthday-united-states-marine-corps.jpg'
+									src={usmcReagan}
 									style={{
 										objectFit: 'cover',
 
@@ -95,7 +98,7 @@ const testPage = () => {
 							<div style={{ backgroundColor: 'black' }}>
 								{' '}
 								<img
-									src='https://www.decalgirl.com/assets/designs/large/pain.jpg'
+									src={usmcPain}
 									style={{
 										objectFit: 'cover',
 
@@ -108,7 +111,7 @@ const testPage = () => {
 					</Grid>
 					<Grid item xs={12} md={8}>
 						{' '}
-						<Fade>
+						<Fade {...fadeProperties2}>
 							<div>
 								<img
 									src='https://www.stripes.com/news/migrated.image.Image_69200221.jpg/alternates/LANDSCAPE_910/U.S.%20Marines%20of%20Charlie%20Company%2C%201st%20Battalion%2C%203r'
@@ -124,7 +127,7 @@ const testPage = () => {
 							<div>
 								{' '}
 								<img
-									src='https://www.teahub.io/photos/full/17-171995_the-united-states-marine-corps-us-marine-full.jpg'
+									src={usmcCombat}
 									style={{
 										objectFit: 'cover',
 										objectPosition: '10% 50%',
@@ -137,7 +140,7 @@ const testPage = () => {
 							<div>
 								{' '}
 								<img
-									src='https://www.seaforces.org/usmcair/photo19.jpg'
+									src={usmcHelo}
 									style={{
 										objectFit: 'cover',
 
@@ -150,10 +153,10 @@ const testPage = () => {
 							<div>
 								{' '}
 								<img
-									src='https://i2.wp.com/timesofsandiego.com/wp-content/uploads/2017/09/Marine-Corps-Amphibous-Assault-Vehicle.jpg?ssl=1'
+									src={usmcAnphib}
 									style={{
 										objectFit: 'cover',
-                                        borderRadius: 10,
+										borderRadius: 10,
 										width: '50vh',
 										height: 300,
 									}}
