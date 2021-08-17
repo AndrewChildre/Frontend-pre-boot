@@ -11,14 +11,16 @@ import usmcReagan from '../assets/usmcReagan.jpeg';
 import usmcSemper from '../assets/usmcSemper.jpeg';
 import usmcFlag from '../assets/usmcFlag.jpeg';
 import usmcFront from '../assets/usmcFront.webp';
+
 const Home = () => {
 	const zoomInProperties = {
 		arrows: false,
 		scale: 2.4,
+		duration: 3000,
 	};
 	const fadeProperties = {
 		arrows: false,
-		duration: 3000,
+		
 	};
 	const fadeProperties2 = {
 		arrows: false,

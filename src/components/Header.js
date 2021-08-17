@@ -11,21 +11,20 @@ const useStyles = makeStyles((theme) => ({
 		flexGrow: 1,
 		paddingBottom: 0,
 	},
-	menuButton: {
-		marginRight: theme.spacing(1),
-		color: 'white',
-	},
+	
 	titleHome: {
 		flexGrow: 1,
-		color: 'silver',
+		color: '#D4AF37',
+		fontFamily: 'STIX Two Text, serif',
+		fontSize: 50
 	},
 	title2: {
 		color: 'silver',
 		paddingBottom: 10,
+		fontSize: 14
 	},
 	barColor: {
 		background: 'black',
-		
 	},
 }));
 
@@ -42,9 +41,9 @@ export default function ButtonAppBar() {
 						United States Marine Corps
 					</Typography>
 					<Typography variant='h6' className={classes.title2} >
-						Before Bootcamp
+						Before <br/> Bootcamp
 						<br />
-						Study Guide
+						Guide
 					</Typography>
 				</Toolbar>
 			</AppBar>

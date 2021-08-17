@@ -9,20 +9,24 @@ const useStyles = makeStyles((theme) => ({
 	},
 
 	toptitle: {
-		padding: theme.spacing(2),
+		padding: theme.spacing(1),
 		textAlign: 'center',
-		color: 'blue',
-		background: 'red',
+		color: '#d4af37',
+		background: '#b3001b',
 		width: '100vw',
 		marginTop: 0,
 	},
 	bodyColors: {
-		color: 'white',
-		background: 'blue',
+		color: '#d4af37',
+		background: '#04218b',
 	},
 	subTitle: {
 		marginTop: 70,
 		paddingBottom: 30,
+		fontFamily: 'PT serif',
+	},
+	fontTitle: {
+		fontFamily: 'PT serif',
 	},
 }));
 
@@ -41,11 +45,14 @@ export default function CenteredGrid() {
 				style={{ minHeight: '90vh' }}>
 				<Grid item xs={12}>
 					<Paper className={classes.toptitle}>
-						<Typography variant='h3'>Leadership</Typography>
+						<Typography className={classes.fontTitle} variant='h3'>
+							Leadership
+						</Typography>
 					</Paper>
 				</Grid>
 				<Grid className={classes.subTitle} item xs={6}>
 					<img
+						style={{ borderRadius: 5 }}
 						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJSoQVS7W6R2ywENCKUeTm4dgRioNX2iIHhA&usqp=CAU'
 						alt='moto'
 					/>
@@ -144,6 +151,7 @@ export default function CenteredGrid() {
 
 				<Grid className={classes.subTitle} item xs={6}>
 					<img
+						style={{ borderRadius: 5 }}
 						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpVNzCMwM8oJ8txpIeT-2Yj5e8Q0ckQBa8g&usqp=CAU'
 						alt='moto'
 					/>

@@ -14,7 +14,7 @@ import M16 from './components/M16'
 function App() {
   return (
 		<div className='App'>
-			{/* <Fitness /> */}
+		
 
 			<main>
 				<Header />
@@ -27,7 +27,7 @@ function App() {
 					<Route path='/rank' exact component={RankSys} />
 					<Route path='/hymn' exact component={Hymn} /> 
 					<Route path='/M16' exact component={M16} />
-					{/* <Route path='/test' exact component={testPage} /> */}
+			
 				</Router>
 			</main>
 		</div>

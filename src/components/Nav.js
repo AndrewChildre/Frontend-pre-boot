@@ -9,21 +9,29 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
 	drw: {
-		borderRadius: 3,
-		border: 0,
 		color: 'silver',
 		height: 48,
 		padding: '20px 30px',
+		'&:hover': {
+			color: '#D4AF37',
+		},
 	},
 	drawerBtn: {
-		color: 'red',
-		background: 'blue',
-		paddingBottom: 80,
+		background: 'black',
+		paddingBottom: 70,
+		color: '#D4AF37',
+		fontFamily: 'STIX Two Text, serif',
+		fontSize: 50,
+		'&:hover': {
+			color: 'red',
+		},
 	},
 	fonts: {
 		color: 'silver',
-		
-		paddingBottom: 17
+		'&:hover': {
+			color: '#D4AF37',
+		},
+		paddingBottom: 17,
 	},
 });
 
@@ -54,7 +62,7 @@ const Nav = () => {
 			<Drawer anchor={'left'} open={state} onClose={ToggleDrawer(false)}>
 				{list()}
 
-				<List style={{  backgroundColor: 'blue'}}>
+				<List style={{  backgroundColor: 'black'}}>
 					<ListItem>
 						<Button href='/'>
 							<Typography className={classes.fonts} variant='h5'>

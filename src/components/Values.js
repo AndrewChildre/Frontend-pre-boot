@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -8,30 +9,28 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
-
-		
 	},
 	toptitle: {
-		padding: theme.spacing(2),
+		padding: theme.spacing(1),
 		textAlign: 'center',
-		color: 'blue',
-		background: 'red',
+		color: '#d4af37',
+		background: '#b3001b',
 		width: '100vw',
-		
 		marginBottom: 80,
 	},
 	bodyColors: {
-		color: 'white',
-		 background: 'blue',
-
-	
-		},
-		subTitle: {
-			marginTop: 60,
-			paddingBottom: 40
-			
-			
-		}
+		color: '#d4af37',
+		background: '#04218b',
+	},
+	subTitle: {
+		marginTop: 60,
+		paddingBottom: 40,
+	},
+	fontTitle: {
+		fontFamily: 'PT serif',
+		fontWeight: 'bold'
+		
+	},
 }));
 
 export default function CenteredGrid() {
@@ -48,17 +47,22 @@ export default function CenteredGrid() {
 				spacing={0}>
 				<Grid item xs={12}>
 					<Paper className={classes.toptitle}>
-						<Typography variant='h3'>Core Values</Typography>
+						<Typography className={classes.fontTitle} variant='h3'>
+							Core Values
+						</Typography>
 					</Paper>
 				</Grid>
 				<Grid item xs={6}>
 					<img
+						style={{ borderRadius: 5 }}
 						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJSoQVS7W6R2ywENCKUeTm4dgRioNX2iIHhA&usqp=CAU'
 						alt='moto'
 					/>
 				</Grid>
 				<Grid className={classes.subTitle} item xs={6}>
-					<Typography variant='h3'>HONOR</Typography>
+					<Typography className={classes.fontTitle}  variant='h3'>
+						HONOR
+					</Typography>
 					<br />
 					<Typography variant='h6'>
 						Honor guides Marines to exemplify the ultimate in ethical and moral
@@ -70,7 +74,9 @@ export default function CenteredGrid() {
 					</Typography>
 				</Grid>
 				<Grid className={classes.subTitle} item xs={6}>
-					<Typography variant='h3'>COURAGE</Typography>
+					<Typography variant='h3' className={classes.fontTitle}>
+						COURAGE
+					</Typography>
 					<br />
 					<Typography variant='h6'>
 						Courage is the mental, moral and physical strength ingrained in
@@ -82,7 +88,9 @@ export default function CenteredGrid() {
 				</Grid>
 
 				<Grid className={classes.subTitle} item xs={6}>
-					<Typography variant='h3'>COMMITMENT</Typography>
+					<Typography variant='h3' className={classes.fontTitle}>
+						COMMITMENT
+					</Typography>
 					<br />
 					<Typography variant='h6'>
 						Commitment is the spirit of determination and dedication found in
