@@ -15,17 +15,16 @@ const useStyles = makeStyles((theme) => ({
 		color: theme.palette.text.secondary,
 		marginLeft: 10,
 		marginRight: 10,
-		
 	},
 	toptitle: {
-		padding: theme.spacing(2),
+		padding: theme.spacing(1),
+	
 		textAlign: 'center',
-		color: 'blue',
-		background: 'red',
-
+		color: '#d4af37',
+		background: '#b3001b',
 	},
 	bodyColors: {
-		background: 'blue',
+		background: '#04218b',
 	},
 }));
 

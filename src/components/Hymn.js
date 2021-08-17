@@ -11,14 +11,13 @@ const useStyles = makeStyles((theme) => ({
 	toptitle: {
 		padding: theme.spacing(2),
 		textAlign: 'center',
-		color: 'blue',
-		background: 'red',
+		color: '#d4af37',
+		background: '#b3001b',
 		width: '100vw',
 	},
 	bodyColors: {
-		color: 'white',
-		background: 'blue',
-		
+		color: '#d4af37',
+		background: '#04218b',
 	},
 }));
 
