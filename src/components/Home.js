@@ -16,7 +16,7 @@ const Home = () => {
 	const zoomInProperties = {
 		arrows: false,
 		scale: 2.4,
-		duration: 3000,
+		duration: 2500,
 	};
 	const fadeProperties = {
 		arrows: false,
