@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	toptitle: {
 		padding: theme.spacing(1),
-	
+
 		textAlign: 'center',
 		color: '#d4af37',
 		background: '#b3001b',

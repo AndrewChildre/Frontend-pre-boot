@@ -20,7 +20,6 @@ const Home = () => {
 	};
 	const fadeProperties = {
 		arrows: false,
-		
 	};
 	const fadeProperties2 = {
 		arrows: false,

@@ -7,7 +7,6 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
-		
 	},
 	toptitle: {
 		padding: theme.spacing(1),
@@ -30,8 +29,6 @@ const useStyles = makeStyles((theme) => ({
 	},
 	picBorder: {
 		borderRadius: 6,
-		
-		
 	},
 }));
 
@@ -47,9 +44,8 @@ export default function CenteredGrid() {
 					</Typography>
 				</Grid>
 
-				<Grid container spacing={4}
-					className={classes.listMargin}>
-					<Grid  className={classes.customMargin} item sm={6}>
+				<Grid container spacing={4} className={classes.listMargin}>
+					<Grid className={classes.customMargin} item sm={6}>
 						<img
 							className={classes.picBorder}
 							src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7WqmuMQUO-h-M59CM1XnE3hbDEJjBSVbIpw&usqp=CAU'

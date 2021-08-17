@@ -61,7 +61,7 @@ export default function CenteredGrid() {
 						</Typography>
 					</Paper>
 				</Grid>
-				<Grid style={{padding: 50}} item xs={6}>
+				<Grid style={{ padding: 50 }} item xs={6}>
 					<Paper className={classes.bodyColors}>
 						<img
 							src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXwpSn7ZiN0SMOPAyQq5YovbWEKC2z3e5d3g&usqp=CAU'

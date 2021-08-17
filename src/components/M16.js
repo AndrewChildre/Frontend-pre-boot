@@ -23,28 +23,28 @@ export default function MediaCard() {
 	const classes = useStyles();
 
 	return (
-		<div >
-		<Container  maxWidth='sm'>
-			<Card  className={classes.root}>
-				<CardActionArea>
-					<CardMedia
-						className={classes.media}
-						image='https://qph.fs.quoracdn.net/main-qimg-8cfbde9de0ced9868b6bfa926efe2e44.webp'
-						title='Contemplative Reptile'
-					/>
-					<CardContent>
-						<Typography gutterBottom variant='h4' component='h2'>
-							M16A4
-						</Typography>
-						<Typography variant='h6' color='textSecondary' component='p'>
-							CALIBER: 5.56x45 NATO (.223 Rem.) WEIGHT: 7.18 lbs (3.26 kg)
-							OVERALL LENGTH: 39.5 in. (100.33 cm) BARREL LENGTH: 20 in. (50.8
-							cm) RATE OF FIRE: 700-950 RPM EFFECTIVE RANGE: 600 m
-						</Typography>
-					</CardContent>
-				</CardActionArea>
-			</Card>
-		</Container>
+		<div>
+			<Container maxWidth='sm'>
+				<Card className={classes.root}>
+					<CardActionArea>
+						<CardMedia
+							className={classes.media}
+							image='https://qph.fs.quoracdn.net/main-qimg-8cfbde9de0ced9868b6bfa926efe2e44.webp'
+							title='Contemplative Reptile'
+						/>
+						<CardContent>
+							<Typography gutterBottom variant='h4' component='h2'>
+								M16A4
+							</Typography>
+							<Typography variant='h6' color='textSecondary' component='p'>
+								CALIBER: 5.56x45 NATO (.223 Rem.) WEIGHT: 7.18 lbs (3.26 kg)
+								OVERALL LENGTH: 39.5 in. (100.33 cm) BARREL LENGTH: 20 in. (50.8
+								cm) RATE OF FIRE: 700-950 RPM EFFECTIVE RANGE: 600 m
+							</Typography>
+						</CardContent>
+					</CardActionArea>
+				</Card>
+			</Container>
 		</div>
 	);
 }

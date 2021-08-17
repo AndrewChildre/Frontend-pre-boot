@@ -5,7 +5,6 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
-
 const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
@@ -28,15 +27,14 @@ const useStyles = makeStyles((theme) => ({
 	},
 	fontTitle: {
 		fontFamily: 'PT serif',
-		fontWeight: 'bold'
-		
+		fontWeight: 'bold',
 	},
 }));
 
 export default function CenteredGrid() {
-  const classes = useStyles();
+	const classes = useStyles();
 
-  return (
+	return (
 		<div className={classes.root}>
 			<Grid
 				className={classes.bodyColors}
@@ -60,7 +58,7 @@ export default function CenteredGrid() {
 					/>
 				</Grid>
 				<Grid className={classes.subTitle} item xs={6}>
-					<Typography className={classes.fontTitle}  variant='h3'>
+					<Typography className={classes.fontTitle} variant='h3'>
 						HONOR
 					</Typography>
 					<br />

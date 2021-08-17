@@ -62,7 +62,7 @@ const Nav = () => {
 			<Drawer anchor={'left'} open={state} onClose={ToggleDrawer(false)}>
 				{list()}
 
-				<List style={{  backgroundColor: 'black'}}>
+				<List style={{ backgroundColor: 'black' }}>
 					<ListItem>
 						<Button href='/'>
 							<Typography className={classes.fonts} variant='h5'>
@@ -122,7 +122,10 @@ const Nav = () => {
 
 					<ListItem>
 						<Button color='primary' href='/M16'>
-							<Typography style={{paddingBottom: 100}} className={classes.fonts} variant='h5'>
+							<Typography
+								style={{ paddingBottom: 100 }}
+								className={classes.fonts}
+								variant='h5'>
 								M16A4 Rifle
 							</Typography>
 						</Button>
