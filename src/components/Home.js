@@ -54,7 +54,6 @@ const Home = () => {
 					/>
 				</div>
 				<div>
-					{' '}
 					<img
 						src={usmcFlag}
 						style={{
@@ -119,7 +118,6 @@ const Home = () => {
 						</div>
 
 						<div>
-							{' '}
 							<img
 								src={usmcCombat}
 								style={{
@@ -145,7 +143,6 @@ const Home = () => {
 							/>
 						</div>
 						<div>
-							{' '}
 							<img
 								src={usmcAnphib}
 								style={{

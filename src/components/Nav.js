@@ -115,7 +115,7 @@ const Nav = () => {
 					<ListItem>
 						<Button color='primary' href='/hymn'>
 							<Typography className={classes.fonts} variant='h5'>
-								Marine Hymn{' '}
+								Marine Hymn
 							</Typography>
 						</Button>
 					</ListItem>

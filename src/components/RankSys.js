@@ -25,7 +25,8 @@ const useStyles = makeStyles((theme) => ({
 	},
 	bodyColors: {
 		background: '#04218b',
-	},
+	}
+
 }));
 
 export default function CenteredGrid() {
@@ -39,7 +40,7 @@ export default function CenteredGrid() {
 				</Paper>
 			</Grid>
 			<Grid spacing={2} className={classes.bodyColors} container>
-				<Grid item xs={3}>
+				<Grid item xs={6} sm={3}>
 					<Paper className={classes.paper}>
 						<img
 							style={{ width: '100%', height: 'auto', paddingBottom: 20 }}
@@ -47,7 +48,7 @@ export default function CenteredGrid() {
 							alt=''
 						/>
 						<Divider />
-						<p>
+						<p >
 							PFC
 							<br />
 							Private First Class
@@ -55,7 +56,7 @@ export default function CenteredGrid() {
 					</Paper>
 				</Grid>
 
-				<Grid item xs={3}>
+				<Grid item xs={6} sm={3}>
 					<Paper className={classes.paper}>
 						<img
 							style={{ width: '100%', height: 'auto', paddingBottom: 20 }}
@@ -71,7 +72,7 @@ export default function CenteredGrid() {
 					</Paper>
 				</Grid>
 
-				<Grid item xs={3}>
+				<Grid item xs={6} sm={3}>
 					<Paper className={classes.paper}>
 						<img
 							style={{ width: '100%', height: 'auto', paddingBottom: 20 }}
@@ -87,7 +88,7 @@ export default function CenteredGrid() {
 					</Paper>
 				</Grid>
 
-				<Grid item xs={3}>
+				<Grid item xs={6} sm={3}>
 					<Paper className={classes.paper}>
 						<img
 							style={{ width: '100%', height: 'auto', paddingBottom: 20 }}
